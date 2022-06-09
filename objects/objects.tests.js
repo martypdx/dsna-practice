@@ -1,8 +1,11 @@
+import {
+    makePet
+} from './objects.js';
 
 const test = QUnit.test;
 
 QUnit.module('objects');
 
 test('test works', (expect) => {
-    expect.equal(true, true);
+    expect.equal(makePet(), undefined);
 });
